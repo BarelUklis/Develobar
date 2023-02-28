@@ -1,4 +1,3 @@
-'use client'
 import formDictionary from '@/lang/contact-page.json'
 import rootStore from '@/store';
 import styles from '@/styles/contact.module.scss'

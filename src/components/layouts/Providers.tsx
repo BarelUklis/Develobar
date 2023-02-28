@@ -1,10 +1,10 @@
-"use client"
 import { ConfigProvider } from "antd"
 import rootStore from "@/store"
 import { Roboto, Heebo } from '@next/font/google'
 import { observer } from "mobx-react-lite"
 import { ThemeProvider } from "next-themes"
 import { getAppDirection } from "@/utils/appDirection"
+import { useEffect, useState } from "react"
 
 type Props = {
   children: React.ReactNode
@@ -23,9 +23,13 @@ const heebo = Heebo({
 
 export const Providers = observer(({ children }: Props) => {
 
+  const [font, setFont] = useState(heebo.className);
+
   const { uiStore } = rootStore;
   const appDirection = getAppDirection();
-  const font = uiStore.pageLanguage === 'he' ? heebo.className : roboto.className;
+  useEffect(() => {
+    setFont(uiStore.pageLanguage === 'he' ? heebo.className : roboto.className);
+  }, [uiStore.pageLanguage]);
 
   return (
     <ConfigProvider direction={appDirection}>

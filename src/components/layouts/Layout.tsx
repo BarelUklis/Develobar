@@ -1,4 +1,4 @@
-import { Providers } from '@/components/Providers';
+import { Providers } from '@/components/layouts/Providers';
 const Navbar = dynamic(() => import('@/components/navbar/navbar'), { ssr: false });
 import ContactModal from '@/components/contact-modal/contact-modal';
 import dynamic from 'next/dynamic';

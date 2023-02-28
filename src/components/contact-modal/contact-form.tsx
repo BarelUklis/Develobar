@@ -1,4 +1,3 @@
-'use client'
 import styles from '@/styles/contact.module.scss'
 import { Badge, Form, FormInstance, Input } from 'antd';
 import rootStore from '@/store';

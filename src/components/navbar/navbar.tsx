@@ -1,4 +1,3 @@
-'use client'
 import { Col, Row, Typography } from 'antd';
 import menuItemsLang from '@/lang/menu-items.json';
 import rootStore from '@/store';

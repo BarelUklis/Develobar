@@ -1,4 +1,3 @@
-import { TLanguage, TPageDirection } from "@/types/ui-types";
 import { makeAutoObservable } from "mobx";
 import { IRootStore } from "./index";
 

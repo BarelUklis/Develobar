@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import moonIcon from "../../../public/theme-icons/moon.svg";
 import sunIcon from "../../../public/theme-icons/sun.svg";

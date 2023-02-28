@@ -1,4 +1,3 @@
-'use client'
 import { Modal } from "antd"
 import { observer } from "mobx-react-lite"
 import ContactForm from "./contact-form"
