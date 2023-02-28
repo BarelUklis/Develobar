@@ -1,0 +1,58 @@
+{
+  "form-header": {
+    "he": "צור קשר או השאר פרטים",
+    "en": "Contact Us or Leave Details"
+  },
+  "name": {
+    "he": "שם",
+    "en": "Name"
+  },
+  "email": {
+    "he": "אימייל",
+    "en": "Email"
+  },
+  "phone": {
+    "he": "טלפון",
+    "en": "Phone"
+  },
+  "message": {
+    "he": "הודעה",
+    "en": "Message"
+  },
+  "submit": {
+    "he": "שלח",
+    "en": "Submit"
+  },
+  "cancel": {
+    "he": "בטל",
+    "en": "Cancel"
+  },
+  "required-err": {
+    "he": "שדה חובה",
+    "en": "Required"
+  },
+  "form-success": {
+    "he": "הטופס נשלח בהצלחה",
+    "en": "Form submitted successfully"
+  },
+  "form-fail": {
+    "he": "הטופס לא נשלח",
+    "en": "Form not submitted"
+  },
+  "contact-details": {
+    "he": "פרטי קשר",
+    "en": "Contact Details"
+  },
+  "call-tooltip": {
+    "he": "לחץ כדי להתקשר",
+    "en": "Click to call"
+  },
+  "email-tooltip": {
+    "he": "לחץ כדי לשלוח מייל",
+    "en": "Click to send email"
+  },
+  "whatsapp-tooltip": {
+    "he": "לחץ כדי לשלוח הודעה בווטסאפ",
+    "en": "Click to send WhatsApp message"
+  }
+}

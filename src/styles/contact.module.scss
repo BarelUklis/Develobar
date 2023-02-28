@@ -1,0 +1,87 @@
+.modal {
+
+  [data-theme='dark'] & {
+    .formItem {
+      * {
+        color: var(--dark-text);
+      }
+    }
+
+    .formInput {
+      background-color: var(--dark-primary);
+    }
+
+    * {
+      color: var(--dark-text);
+      background-color: var(--dark-secondary);
+    }
+  }
+
+  [data-theme='light'] & {
+    .formItem {
+      * {
+        color: var(--light-text);
+      }
+    }
+
+    .formInput {
+      background-color: var(--light-primary);
+      color: var(--light-text);
+    }
+
+    * {
+      color: var(--light-text);
+      background-color: var(--light-primary);
+    }
+  }
+
+  .contactDetails {
+
+    .contactSection {
+      display: flex;
+
+      .contactItem {
+        font-size: 1rem;
+      }
+
+      .contactAction {
+        font-size: 1.2rem;
+        margin: 0 0.5rem;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  .form {
+
+    .formItem {
+
+      .formInput {}
+
+      .badge {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .formButton {
+
+    [data-theme='dark'] & {
+      * {
+        background-color: var(--dark-primary);
+        color: var(--dark-text);
+      }
+    }
+
+    [data-theme='light'] & {
+      * {
+        background-color: var(--light-primary);
+        color: var(--light-text);
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "home": {
+    "en": "Home",
+    "he": "בית"
+  },
+  "about": {
+    "en": "About",
+    "he": "אודות"
+  },
+  "services": {
+    "en": "Services",
+    "he": "שירותים"
+  },
+  "portfolio": {
+    "en": "Portfolio",
+    "he": "פורטפוליו"
+  },
+  "contact": {
+    "en": "Contact",
+    "he": "צור קשר"
+  }
+}
