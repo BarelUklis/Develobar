@@ -4,15 +4,19 @@ import rootStore from '@/store';
 import { observer } from 'mobx-react-lite';
 import { getAppDirection } from '@/utils/appDirection';
 import formDictionary from '@/lang/contact-page.json'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const ContactForm = observer(({ form }: { form: FormInstance }) => {
 
-  const { uiStore } = rootStore;
+  const { uiStore, formStore } = rootStore;
 
   const [messageLength, setMessageLength] = useState(0);
 
   const appDirection = getAppDirection();
+
+  useEffect(() => {
+    !formStore.contactModalOpen && setMessageLength(0);
+  }, [formStore.contactModalOpen])
 
   return (
     <Form
