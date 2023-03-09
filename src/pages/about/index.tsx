@@ -3,6 +3,7 @@ const DirectionLayout = dynamic(() => import('@/components/layouts/DirectionLayo
 import style from '@/styles/about.module.scss'
 import { observer } from 'mobx-react-lite'
 const AboutMe = dynamic(() => import('@/components/about/aboutMe'), { ssr: false })
+const AboutStack = dynamic(() => import('@/components/about/aboutStack'), { ssr: false })
 
 const About = observer(() => {
   return (
@@ -10,6 +11,7 @@ const About = observer(() => {
       <DirectionLayout>
         <div className={style.mainAbout}>
           <AboutMe />
+          <AboutStack />
         </div>
       </DirectionLayout>
     </>

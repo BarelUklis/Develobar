@@ -7,18 +7,6 @@
   width: 100%;
   padding: 0 20px;
 
-  [data-theme='light'] .mainAbout {
-    * {
-      color: var(--light-text)
-    }
-  }
-
-  [data-theme='dark'] .mainAbout {
-    * {
-      color: var(--dark-text)
-    }
-  }
-
   .aboutMeDiv {
     display: flex;
     height: 50vh;
@@ -48,5 +36,17 @@
         margin-bottom: 10px;
       }
     }
+  }
+}
+
+[data-theme='light'] .mainAbout {
+  * {
+    color: var(--light-text)
+  }
+}
+
+[data-theme='dark'] .mainAbout {
+  * {
+    color: var(--dark-text)
   }
 }

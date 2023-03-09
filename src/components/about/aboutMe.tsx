@@ -14,23 +14,23 @@ const AboutMe = observer(() => {
   return (
     <div dir={appDirection} className={style.aboutMeDiv}>
       <div className={style.aboutImageDiv}>
-      <Image
-        src={profile}
-        alt="About Me"
-        className={style.aboutMeImage}
-        width={350}
-        height={350}
-      />
-            </div>
+        <Image
+          src={profile}
+          alt="Profile Image"
+          className={style.aboutMeImage}
+          width={350}
+          height={350}
+        />
+      </div>
       <div className={style.aboutTextDiv}>
-      <Typography.Title className={style.aboutMeHeading} level={1}>
-        {aboutMeDictionary['about-me'][uiStore.pageLanguage]}
-      </Typography.Title>
-      <Typography.Paragraph
-        className={style.aboutMeDetails}
-      >
-        {aboutMeDictionary['about-me-details'][uiStore.pageLanguage]}
-      </Typography.Paragraph>
+        <Typography.Title className={style.aboutMeHeading} level={1}>
+          {aboutMeDictionary['about-me'][uiStore.pageLanguage]}
+        </Typography.Title>
+        <Typography.Paragraph
+          className={style.aboutMeDetails}
+        >
+          {aboutMeDictionary['about-me-details'][uiStore.pageLanguage]}
+        </Typography.Paragraph>
       </div>
     </div>
   )
