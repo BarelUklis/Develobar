@@ -1,0 +1,52 @@
+.mainAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0 20px;
+
+  [data-theme='light'] .mainAbout {
+    * {
+      color: var(--light-text)
+    }
+  }
+
+  [data-theme='dark'] .mainAbout {
+    * {
+      color: var(--dark-text)
+    }
+  }
+
+  .aboutMeDiv {
+    display: flex;
+    height: 50vh;
+    width: 80vw;
+    margin-top: 150px;
+
+    .aboutImageDiv {
+      margin: 10px 30px;
+
+      .aboutMeImage {
+        border-radius: 10px;
+      }
+    }
+
+    .aboutTextDiv {
+
+      .aboutMeHeading {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-top: 0;
+      }
+
+      .aboutMeDetails {
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

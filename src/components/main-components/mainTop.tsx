@@ -1,7 +1,7 @@
 import { Row, Typography } from "antd"
 import styles from '@/styles/home.module.scss'
 import { getAppDirection } from '@/utils/appDirection'
-import TextSlideHook from "@/hooks/textSlideHook"
+// import TextSlideHook from "@/hooks/textSlideHook"
 import homePageDictionary from "@/lang/main-page.json"
 import rootStore from "@/store"
 import { observer } from "mobx-react-lite"
@@ -16,7 +16,7 @@ const MainTop = observer(() => {
   const appDirection = getAppDirection();
   //TextSlideHook('sliding-sub-header');
   return (
-    <div  className={`${styles.mainTop} ${styles.mainScreen} ${styles.mainAnimation}`}>
+    <div className={`${styles.mainTop} ${styles.mainScreen} ${styles.mainAnimation}`}>
     <Row className={styles.mainTopTRow}>
       <Image
         src={theme === 'dark' ? logoLight : logoDark}

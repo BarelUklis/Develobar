@@ -7,7 +7,6 @@ export default function Document() {
   return (
     <Html lang={pageLanguage}>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
