@@ -1,6 +1,28 @@
 .modal {
-
   [data-theme='dark'] & {
+    * {
+      color: var(--dark-text);
+    }
+
+    div {
+      background-color: var(--dark-secondary);
+
+      div {
+        button {
+          background-color: var(--dark-primary);
+          border: 1px solid var(--dark-primary);
+          color: var(--dark-text);
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            background-color: var(--dark-secondary-2);
+            border: 1px solid var(--dark-secondary-2);
+            color: var(--light-text);
+          }
+        }
+      }
+    }
+
     .formItem {
       * {
         color: var(--dark-text);
@@ -10,14 +32,32 @@
     .formInput {
       background-color: var(--dark-primary);
     }
-
-    * {
-      color: var(--dark-text);
-      background-color: var(--dark-secondary);
-    }
   }
 
   [data-theme='light'] & {
+    * {
+      color: var(--light-text);
+    }
+
+    div {
+      background-color: var(--light-secondary);
+
+      div {
+        button {
+          background-color: var(--light-primary);
+          border: 1px solid var(--light-primary);
+          color: var(--light-text);
+          transition: all 0.2s ease-in-out;
+
+          &:hover {
+            background-color: var(--light-secondary-2);
+            border: 1px solid var(--light-secondary-2);
+            color: var(--dark-text);
+          }
+        }
+      }
+    }
+
     .formItem {
       * {
         color: var(--light-text);
@@ -26,12 +66,22 @@
 
     .formInput {
       background-color: var(--light-primary);
-      color: var(--light-text);
+    }
+  }
+
+  .badge {
+    margin-top: 5px;
+
+    [data-theme='dark'] & {
+      * {
+        background-color: var(--dark-primary);
+      }
     }
 
-    * {
-      color: var(--light-text);
-      background-color: var(--light-primary);
+    [data-theme='light'] & {
+      * {
+        background-color: var(--light-primary);
+      }
     }
   }
 
@@ -52,35 +102,6 @@
         &:hover {
           transform: scale(1.2);
         }
-      }
-    }
-  }
-
-  .form {
-
-    .formItem {
-
-      .formInput {}
-
-      .badge {
-        margin-top: 5px;
-      }
-    }
-  }
-
-  .formButton {
-
-    [data-theme='dark'] & {
-      * {
-        background-color: var(--dark-primary);
-        color: var(--dark-text);
-      }
-    }
-
-    [data-theme='light'] & {
-      * {
-        background-color: var(--light-primary);
-        color: var(--light-text);
       }
     }
   }

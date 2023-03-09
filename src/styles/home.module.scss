@@ -29,21 +29,31 @@
 
 .mainTop {
   .mainTopTRow {
-    height: 50vh;
+    height: 40vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .mainTopLogo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .mainTopBRow {
-    height: 50vh;
+    height: 60vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+
+    .header {
+      font-size: 3rem;
+    }
   }
 }
 

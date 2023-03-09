@@ -1,10 +1,10 @@
 {
   "header": {
-    "en": "We build Web Sites and Web Applications",
-    "he": "בניית אתרים ואפליקציות ווב"
+    "en": "Building web applications from end to end",
+    "he": "בניית אפליקציות ווב מקצה לקצה"
   },
   "subHeader": {
-    "en": "Let us bring your vision to life, from building your next project, to maintaining your existing one.",
-    "he": "בואו נבנה את החלום שלכם, מבניית הפרויקט הבא, עד תחזוקת הקיים."
+    "en": "Client side, server side,, API's, maintenance and more",
+    "he": "צד לקוח, צד שרת,, API's, תחזוקה ועוד"
   }
 }

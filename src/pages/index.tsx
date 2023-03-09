@@ -12,8 +12,6 @@ const Home = observer(() => {
       <DirectionLayout>
         <div className={styles.main}>
           <MainTop />
-          <div className={`${styles.mainMid} ${styles.mainScreen}`}>
-          </div>
         </div>
       </DirectionLayout>
     </>
